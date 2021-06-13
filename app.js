@@ -2,13 +2,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
+require('dotenv').config();
 const date = require(__dirname + "/date.js");
 
 const app = express();
 
 //mongoose.connect("mongodb://localhost:27017/todoListDB", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
-
-mongoose.connect("mongodb+srv://suchitra_13:Test123@cluster0.qqfg6.mongodb.net/todoListDB", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect(process.env.URL, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 const itemSchema = {
     name: String
@@ -43,9 +43,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 //get method
+//let day = date.getDate();
 app.get("/", function (req, res) {
-
-    // let day = date.getDate();
 
     Item.find({}, (err, foundItems) => {
         if (foundItems.length === 0) {
