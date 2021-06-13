@@ -1,10 +1,12 @@
 [Visit TodoListApp here](https://shrouded-journey-50322.herokuapp.com/home)
 
 
-<div align="center">
+<!-- <div align="center">
   <img src="/public/.jpg" alt="ToDo App">
 </div>
 
+ -->
+ ![Screenshot (243)](https://user-images.githubusercontent.com/60110218/121798219-bdd9af80-cc42-11eb-86c0-40321f3b6bde.png)
 
 
 <h1 style="margin-top:40px;">Features</h1>
