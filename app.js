@@ -3,9 +3,13 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
 require('dotenv').config();
+const favicon = require("serve-favicon");
 const date = require(__dirname + "/date.js");
 
 const app = express();
+
+//set favicon
+app.use(favicon(__dirname + "/public/images/favicon.ico"));
 
 //mongoose.connect("mongodb://localhost:27017/todoListDB", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 mongoose.connect(process.env.URL, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
