@@ -1,8 +1,8 @@
 html {
-  background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
   min-height: 1000px;
-  font-family: 'helvetica neue';
+  font-family: "helvetica neue";
 }
 
 h1 {
@@ -10,15 +10,27 @@ h1 {
   padding: 10px;
 }
 /* This is for gradient*/
- body{
-font-family: Roboto;
-   background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
-   background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
-   background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
-   background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Opera 11.10+ */
-   background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
-   height: 500px;
-}  
+body {
+  font-family: Roboto;
+  background: -webkit-linear-gradient(
+    90deg,
+    #2bc0e4 10%,
+    #eaecc6 90%
+  ); /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(
+    90deg,
+    #2bc0e4 10%,
+    #eaecc6 90%
+  ); /* FF3.6+ */
+  background: -ms-linear-gradient(90deg, #2bc0e4 10%, #eaecc6 90%); /* IE10 */
+  background: -o-linear-gradient(
+    90deg,
+    #2bc0e4 10%,
+    #eaecc6 90%
+  ); /* Opera 11.10+ */
+  background: linear-gradient(90deg, #2bc0e4 10%, #eaecc6 90%); /* W3C */
+  height: 500px;
+}
 .box {
   max-width: 400px;
   margin: 50px auto;
@@ -28,7 +40,7 @@ font-family: Roboto;
 }
 
 #heading {
-  background-color: #A683E3;
+  background-color: #a683e3;
   text-align: center;
 }
 
@@ -36,16 +48,16 @@ font-family: Roboto;
   min-height: 70px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .item:last-child {
   border-bottom: 0;
 }
 
-input:checked+p {
+input:checked + p {
   text-decoration: line-through;
-  text-decoration-color: #A683E3;
+  text-decoration-color: #a683e3;
 }
 
 input[type="checkbox"] {
@@ -70,7 +82,7 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #A683E3;
+  background-color: #a683e3;
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
@@ -90,7 +102,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #A683E3;
+  box-shadow: inset 0 -3px 0 0 #a683e3;
 }
 
 ::placeholder {
